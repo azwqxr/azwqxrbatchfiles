@@ -1,3 +1,11 @@
-Hangout with friends all versions:
-
-[every-game-there-is.yml](https://github.com/robloxgamer5059/Hangout-With-Friends-the-epic-series/blob/main/.github/workflows/every-game-there-is.yml)
+azwqxr batch files
+-----------------------
+keep my batch files up to date with the updates posted here
+-----------------------
+BUG FIXES
+ASTHETIC UPDATES
+PATCHES
+CUSTOM UPDATES
+-----------------------
+for custom updates please message me via discord at
+azwqxrplayzstuff
