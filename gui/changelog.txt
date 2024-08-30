@@ -1,2 +1,3 @@
--2/30/24 4:25 MDT
+-2/30/24
     removed startup notification
+    gonna try and work on the default notification glitch patch
