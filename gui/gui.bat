@@ -5,8 +5,11 @@ color 07
 echo Welcome
 echo.
 echo 1) Notification
+echo.
 echo 2) Message popup
+echo.
 echo 3) Sticky note
+echo.
 set /p input=">> "
 if %input% EQU 1 goto noti
 if %input% EQU 2 goto msg
@@ -19,9 +22,9 @@ color 02
 echo Please state the scopes you would like to see:
 echo.
 set /p titlenoti="Title>> "
+echo.
 set /p captionnoti="Caption>> "
-set /p iconnoti="Icon>> "
-powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -AssemblyName System.Drawing; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::%iconnoti%; $notify.Visible = $true; $notify.ShowBalloonTip(0, '%titlenoti%', '%captionnoti%', [System.Windows.Forms.ToolTipIcon]::None)}"
+powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -AssemblyName System.Drawing; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::Information; $notify.Visible = $true; $notify.ShowBalloonTip(0, '%titlenoti%', '%captionnoti%', [System.Windows.Forms.ToolTipIcon]::%iconnoti%)}"
 cls
 goto menu
 
@@ -38,8 +41,6 @@ echo.
 set /p bodymsg="Message>> "
 echo.
 set /p iconmsg="Icon>> "
-cls
-echo loading your message. Please wait
 powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('%bodymsg%', '%titlemsg%', 'OK', [System.Windows.Forms.MessageBoxIcon]::%iconmsg%);}"
 cls
 goto menu
@@ -53,8 +54,6 @@ echo.
 set /p titlenote="Title>> "
 echo.
 set /p bodynote="Message>> "
-cls
-echo loading your message. Please wait
 powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; $mainForm = New-Object System.Windows.Forms.Form; $mainForm.Text = '%titlenote%'; $lbl = New-Object System.Windows.Forms.Label; $lbl.Text = '%bodynote%'; $mainForm.Controls.Add($lbl); $mainForm.StartPosition = [System.Windows.Forms.FormStartPosition]::CenterScreen; $mainForm.ShowDialog()}"
 cls
 goto menu
