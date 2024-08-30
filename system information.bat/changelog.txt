@@ -1,2 +1,2 @@
-- 8/30/24 4:20 MDT
+- 8/30/24
     removed variables in the tip: it is only text now
