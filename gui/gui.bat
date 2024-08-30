@@ -14,6 +14,14 @@ set /p input=">> "
 if %input% EQU 1 goto noti
 if %input% EQU 2 goto msg
 if %input% EQU 3 goto note
+if %input% NEQ 1,2,3 goto error
+
+
+
+:error
+exit
+
+
 
 
 :noti
