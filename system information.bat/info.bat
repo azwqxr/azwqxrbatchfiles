@@ -1,6 +1,5 @@
 @echo off
 set tip=[96m[TIP:][0m
-set tip1=[93m The title of this command tab changes depending on the account you use[0m
 title Information for: %username%
 color a
 setlocal enabledelayedexpansion
@@ -28,7 +27,7 @@ echo Processors: %number_of_processors%
 echo Mothboard Manufacturer: %manufacture%
 echo.
 echo.
-echo %tip% %tip1%
+echo [96m[TIP:][0m [93m The title of this command tab changes depending on the account you use[0m
 echo.
 echo.
 pause
