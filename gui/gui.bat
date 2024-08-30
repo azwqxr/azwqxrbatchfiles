@@ -1,6 +1,5 @@
 @echo off
 title GUI Creator dashboard
-powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -AssemblyName System.Drawing; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::Information; $notify.Visible = $true; $notify.ShowBalloonTip(0, 'Connected!', 'GUI.bat', [System.Windows.Forms.ToolTipIcon]::None)}"
 :menu
 color 07
 echo Welcome
@@ -21,7 +20,8 @@ echo Please state the scopes you would like to see:
 echo.
 set /p titlenoti="Title>> "
 set /p captionnoti="Caption>> "
-powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -AssemblyName System.Drawing; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::Information; $notify.Visible = $true; $notify.ShowBalloonTip(0, '%titlenoti%', '%captionnoti%', [System.Windows.Forms.ToolTipIcon]::None)}"
+set /p iconnoti="Icon>> "
+powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -AssemblyName System.Drawing; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::%iconnoti%; $notify.Visible = $true; $notify.ShowBalloonTip(0, '%titlenoti%', '%captionnoti%', [System.Windows.Forms.ToolTipIcon]::None)}"
 cls
 goto menu
 
