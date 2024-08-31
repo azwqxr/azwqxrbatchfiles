@@ -1,6 +1,6 @@
 azwqxr batch files
 -----------------------
-keep my batch files up to date with the updates posted here
+keep my batch files up to date with the updates posted in the folders
 -----------------------
 BUG FIXES | 
 ASTHETIC UPDATES | 
