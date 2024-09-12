@@ -1,0 +1,6 @@
+You must make a folder with the following in it:
+
+  1: A folder named files
+  2: the .bat file
+
+Otherwise this file will not work
