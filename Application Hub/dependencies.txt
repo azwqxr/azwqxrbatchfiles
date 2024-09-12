@@ -3,4 +3,6 @@ You must make a folder with the following in it:
   1: A folder named files
   2: the .bat file
 
-Otherwise this file will not work
+Add the apps you are using to the files folder
+then
+rename them according to the readme guide here: https://tinyurl.com/apphubfiles
