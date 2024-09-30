@@ -1,3 +1,6 @@
 -2/30/24
     removed startup notification
     notification as default glitch patched
+
+-9/30/24
+    patched the notification not loading error
