@@ -32,7 +32,7 @@ echo.
 set /p titlenoti="Title>> "
 echo.
 set /p captionnoti="Caption>> "
-powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -AssemblyName System.Drawing; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::Information; $notify.Visible = $true; $notify.ShowBalloonTip(0, '%titlenoti%', '%captionnoti%', [System.Windows.Forms.ToolTipIcon]::%iconnoti%)}"
+powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; Add-Type -AssemblyName System.Drawing; $notify = New-Object System.Windows.Forms.NotifyIcon; $notify.Icon = [System.Drawing.SystemIcons]::Information; $notify.Visible = $true; $notify.ShowBalloonTip(0, '%titlenoti%', '%captionnoti%', [System.Windows.Forms.ToolTipIcon]::Error)}"
 cls
 goto menu
 
