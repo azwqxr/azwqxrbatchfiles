@@ -1,2 +1,5 @@
+-10/2/24
+    streamlined the "Which website to ping?" question to a popup box
+
 -9/29/24
     if the website you provided is not valid it will no longer take you to the try again menu
